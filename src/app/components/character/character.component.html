@@ -1,0 +1,21 @@
+<ng-container>
+  <a [routerLink]="['/detail', character.id]">
+    <figure
+      *ngIf="character"
+      class="rounded-lg transform hover:scale-105 duration-300 cursor-pointer hover:shadow-xl"
+    >
+      <img
+        [src]="character.image"
+        class="aspect-square duration-300 grayscale hover:grayscale-0"
+        alt="image_product"
+      />
+
+      <figcaption class="p-3 lg:p-6">
+        <h3 class="text-3xl font-bold">{{ character.name }}</h3>
+        <p>Species: {{ character.species }}</p>
+        <p>Gender: {{ character.gender }}</p>
+      </figcaption>
+    </figure>
+  </a>
+</ng-container>
+<ng-container *ngIf="!character">No found data</ng-container>

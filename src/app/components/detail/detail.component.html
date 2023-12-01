@@ -1,0 +1,12 @@
+<section class="bg-black min-h-screen w-full flex items-center justify-center text-white">
+    <figure class="w-10/12 md:w-4/12 mx-auto flex gap-10 flex-col md:flex-row items-center justify-between">
+        <figcaption class="">
+            <h3 class="text-3xl md:text-5xl font-bold mb-3">{{character.name}}</h3>
+            <p><strong>Species:</strong> {{character.species}}</p>
+            <p><strong>Gender:</strong> {{character.gender}}</p>
+            <p><strong>Status:</strong> {{character.status}}</p>
+            <p><strong>Created:</strong> {{character.created}}</p>
+        </figcaption>
+        <img [src]="character.image" class="rounded-full hover:animate-spin" alt="img_character">
+    </figure>
+</section>
